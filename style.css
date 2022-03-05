@@ -1,4 +1,21 @@
-body {background-color:tan;}
-h1{color:green;}
 
+body {background-color:black;font-family:arial;color:white}
+h1{color:grey;font-family:verdana}
+.maindiv {
+    background-color:white;
+    color:black;
+    width:300px;
+    padding:20px;
+    border-radius:25px;
 
+}
+.outer {
+    display: flex;
+justify-content: center;}
+
+.inputstyle{float:right;}
+.mark { 
+  background-color: yellow;
+  color: black;
+  font-weight:bold;
+}

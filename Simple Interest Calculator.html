@@ -1,0 +1,46 @@
+<! DOCTYPE >
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+        <title>Simple Interest Calculator</title>
+    </head>
+    <body>
+	<div class="outer">
+        <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        <p>Amount <input type="number" id="principal" class="inputstyle"></p> 
+        <p>Rate <input type="number"  id="rate" onchange="updateRate()" class="inputstyle"> </p> 
+        <p>No. of Years <input type="number"  id="years" class="inputstyle"></p>             
+		<select id="years" onchange="myFunction(event)">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select>
+            
+        <p>Interest : <input type="range" id="ratebar" min="1" max="20" value="default_val">
+            <span id="rate_val">10.25%</span>
+            <span id="result"></span></p>
+
+        <button onclick="compute()">Compute Interest</button>
+            <p><span id="result"></span></p>
+			
+		<footer>
+			<p>&#169; This Calculator belongs to M. Baskaran</p>
+		</footer>
+        </div>
+        
+</div>
+    </body>
+</html>
+
+
